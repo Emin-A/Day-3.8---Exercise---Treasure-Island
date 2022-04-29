@@ -21,13 +21,30 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 /______/______/______/______/______/______/______/______/______/______/[TomekK]
 *******************************************************************************
 ''')
+path_one = "left"
+path_two = "swim"
+path_three = "red"
+
 print("Welcome to Treasure Island!")
 print("Your mission is to find the hidden treasure!")
-print("You are stranded on an island and in front of you there two paths, left and right.\n Which path do you choose?")
-input()
+path_one = input("You are stranded on an island and in front of you there two paths, left and right.\nWhich path do you choose?\n")
 
-# path_one = "left"
-# path_two = "right"
+if path_one == "left":
+  print(input("There is pond in your way, do you choose to swim or wait?\n"))
+  if path_two == "swim":
+    print(input("You have arrived at a abandoned castle but there two entrance doors.\n Which door do you enter, the red one or the green one?\n"))
+    if path_three == "red":
+      print("You enter a safe haven room full of treasure and food and you live like a KING!\nHail to the king baby!\nTHE END")
+    elif path_three == "green":
+      print("You enter the room and there is a portal to another world floating in the air. \nYou jump through the portal but land on Teletubbies Island...\nGAME OVER!")
+  elif path_two == "wait":
+    print(("You fell into a pit of snakes, scorpions and crocodiles!\nGAME OVER!")
+elif path_one == "right":
+  print("GAME OVER!")
+else:
+  print("GAME OVER!")
+
+
 # path_three = "swim"
 # path_four = "wait"
 # red_door = "red"
